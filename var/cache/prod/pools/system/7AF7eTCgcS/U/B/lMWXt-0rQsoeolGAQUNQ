@@ -1,0 +1,98 @@
+<?php //fd138ea9677372fbdf433a285fc6ad81
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Query\\ParserResult'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ParserResult')),
+        clone ($p['Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor')),
+        clone ($p['Doctrine\\ORM\\Query\\ResultSetMapping'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ResultSetMapping')),
+    ],
+    null,
+    [
+        'Doctrine\\ORM\\Query\\ParserResult' => [
+            '_sqlExecutor' => [
+                $o[1],
+            ],
+            '_resultSetMapping' => [
+                $o[2],
+            ],
+        ],
+        'Doctrine\\ORM\\Query\\Exec\\AbstractSqlExecutor' => [
+            '_sqlStatements' => [
+                1 => 'SELECT s0_.id AS id_0, s0_.identifiant AS identifiant_1, s0_.date_debut AS date_debut_2, s0_.date_fin AS date_fin_3, s0_.nb_jours AS nb_jours_4, s0_.responsable AS responsable_5, s0_.telephone AS telephone_6, s0_.site_session AS site_session_7, s0_.adresse AS adresse_8, s0_.code_postal AS code_postal_9, s0_.ville AS ville_10, s0_.entreprise_id_id AS entreprise_id_id_11, s0_.titre_id_id AS titre_id_id_12 FROM session s0_',
+            ],
+        ],
+        'stdClass' => [
+            'aliasMap' => [
+                2 => [
+                    'e' => 'App\\Entity\\Session',
+                ],
+            ],
+            'fieldMappings' => [
+                2 => [
+                    'id_0' => 'id',
+                    'identifiant_1' => 'identifiant',
+                    'date_debut_2' => 'date_debut',
+                    'date_fin_3' => 'date_fin',
+                    'nb_jours_4' => 'nb_jours',
+                    'responsable_5' => 'responsable',
+                    'telephone_6' => 'telephone',
+                    'site_session_7' => 'site_session',
+                    'adresse_8' => 'adresse',
+                    'code_postal_9' => 'code_postal',
+                    'ville_10' => 'ville',
+                ],
+            ],
+            'typeMappings' => [
+                2 => [
+                    'entreprise_id_id_11' => 'integer',
+                    'titre_id_id_12' => 'integer',
+                ],
+            ],
+            'entityMappings' => [
+                2 => [
+                    'e' => null,
+                ],
+            ],
+            'metaMappings' => [
+                2 => [
+                    'entreprise_id_id_11' => 'entreprise_id_id',
+                    'titre_id_id_12' => 'titre_id_id',
+                ],
+            ],
+            'columnOwnerMap' => [
+                2 => [
+                    'id_0' => 'e',
+                    'identifiant_1' => 'e',
+                    'date_debut_2' => 'e',
+                    'date_fin_3' => 'e',
+                    'nb_jours_4' => 'e',
+                    'responsable_5' => 'e',
+                    'telephone_6' => 'e',
+                    'site_session_7' => 'e',
+                    'adresse_8' => 'e',
+                    'code_postal_9' => 'e',
+                    'ville_10' => 'e',
+                    'entreprise_id_id_11' => 'e',
+                    'titre_id_id_12' => 'e',
+                ],
+            ],
+            'declaringClasses' => [
+                2 => [
+                    'id_0' => 'App\\Entity\\Session',
+                    'identifiant_1' => 'App\\Entity\\Session',
+                    'date_debut_2' => 'App\\Entity\\Session',
+                    'date_fin_3' => 'App\\Entity\\Session',
+                    'nb_jours_4' => 'App\\Entity\\Session',
+                    'responsable_5' => 'App\\Entity\\Session',
+                    'telephone_6' => 'App\\Entity\\Session',
+                    'site_session_7' => 'App\\Entity\\Session',
+                    'adresse_8' => 'App\\Entity\\Session',
+                    'code_postal_9' => 'App\\Entity\\Session',
+                    'ville_10' => 'App\\Entity\\Session',
+                ],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

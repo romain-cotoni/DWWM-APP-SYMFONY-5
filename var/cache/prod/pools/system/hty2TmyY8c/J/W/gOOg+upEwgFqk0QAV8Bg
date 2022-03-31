@@ -1,0 +1,3 @@
+<?php //App%255CController%255CAdmin%255CJuryCrudController
+
+return [PHP_INT_MAX, []];

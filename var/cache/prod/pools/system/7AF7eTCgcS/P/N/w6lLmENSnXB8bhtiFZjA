@@ -1,0 +1,74 @@
+<?php //cfa05ccd8f2a048758f34836cdebaf71
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Query\\ParserResult'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ParserResult')),
+        clone ($p['Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor')),
+        clone ($p['Doctrine\\ORM\\Query\\ResultSetMapping'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ResultSetMapping')),
+    ],
+    null,
+    [
+        'Doctrine\\ORM\\Query\\ParserResult' => [
+            '_sqlExecutor' => [
+                $o[1],
+            ],
+            '_resultSetMapping' => [
+                $o[2],
+            ],
+        ],
+        'Doctrine\\ORM\\Query\\Exec\\AbstractSqlExecutor' => [
+            '_sqlStatements' => [
+                1 => 'SELECT h0_.id AS id_0, h0_.titre_habilitation AS titre_habilitation_1, h0_.date_debut_habilitation AS date_debut_habilitation_2, h0_.date_fin_habilitation AS date_fin_habilitation_3, h0_.titre_id_id AS titre_id_id_4 FROM habilitation h0_',
+            ],
+        ],
+        'stdClass' => [
+            'aliasMap' => [
+                2 => [
+                    'e' => 'App\\Entity\\Habilitation',
+                ],
+            ],
+            'fieldMappings' => [
+                2 => [
+                    'id_0' => 'id',
+                    'titre_habilitation_1' => 'titre_habilitation',
+                    'date_debut_habilitation_2' => 'date_debut_habilitation',
+                    'date_fin_habilitation_3' => 'date_fin_habilitation',
+                ],
+            ],
+            'typeMappings' => [
+                2 => [
+                    'titre_id_id_4' => 'integer',
+                ],
+            ],
+            'entityMappings' => [
+                2 => [
+                    'e' => null,
+                ],
+            ],
+            'metaMappings' => [
+                2 => [
+                    'titre_id_id_4' => 'titre_id_id',
+                ],
+            ],
+            'columnOwnerMap' => [
+                2 => [
+                    'id_0' => 'e',
+                    'titre_habilitation_1' => 'e',
+                    'date_debut_habilitation_2' => 'e',
+                    'date_fin_habilitation_3' => 'e',
+                    'titre_id_id_4' => 'e',
+                ],
+            ],
+            'declaringClasses' => [
+                2 => [
+                    'id_0' => 'App\\Entity\\Habilitation',
+                    'titre_habilitation_1' => 'App\\Entity\\Habilitation',
+                    'date_debut_habilitation_2' => 'App\\Entity\\Habilitation',
+                    'date_fin_habilitation_3' => 'App\\Entity\\Habilitation',
+                ],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];
