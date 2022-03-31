@@ -1,0 +1,53 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ pageName }}{% endblock %}
+
+{% block content %}
+    <div class="text-size-1">
+        <div class="row mx-0">            
+            <div class="col-lg-6 text-white d-flex justify-content-center align-items-center">
+                <div class="mx-5 text-center ">                     
+                    <h1 class="mt-3 mb-3">
+                        <img src="{{asset('assets/icon/camper-van.png')}}" alt="icon1">{{ juryCat1Title }}
+                    </h1>
+                    <p>{{ juryCat1Para1 }}</p>
+                    <p>{{ juryCat1Para2 }}</p>
+                    <p>{{ juryCat1Para3 }}</p>
+                    <p>{{ juryCat1Para3 }}</p>
+                    <p>{{ juryCat1Para3 }}</p>
+                </div>
+            </div>
+            <div class="col-xs-0 col-sm-0 col-lg-6 bg-sm-white bg-xs-white"></div>
+        </div>
+        <div class="row mx-0 text-white">
+            <div class="col-lg-6"></div>
+            <div class="col-lg-6 d-flex justify-content-center align-items-center">
+                <div class="mx-5 text-center ">                     
+                    <h1 class="mt-3 mb-3">
+                        <img src="{{asset('assets/icon/certification.png')}}" alt="icon2">{{ juryCat2Title }}
+                    </h1>
+                    <p>{{ juryCat2Para1 }}</p>
+                    <p>{{ juryCat2Para2 }}</p>
+                    <p>{{ juryCat2Para3 }}</p>
+                    <p>{{ juryCat2Para3 }}</p>
+                    <p>{{ juryCat2Para3 }}</p>
+                </div>
+            </div>            
+        </div>
+        <div class="row mx-0">            
+            <div class="col-lg-6 text-white d-flex justify-content-center align-items-center">
+                <div class="mx-5 text-center">                     
+                    <h1 class="mt-3 mb-3">
+                        <img src="{{asset('assets/icon/judge.png')}}" alt="icon3">{{ juryCat3Title }}
+                    </h1>
+                    <p>{{ juryCat3Para1 }}</p>
+                    <p>{{ juryCat3Para2 }}</p>
+                    <p>{{ juryCat3Para3 }}</p>
+                    <p>{{ juryCat3Para3 }}</p>
+                    <p>{{ juryCat3Para3 }}</p>                
+                </div>
+            </div>
+            <div class="col-lg-6"></div>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,6 @@
+#index:
+#    path: /
+#    controller: App\Controller\DefaultController::index
+ajouter:
+  path: /app/ajouter
+  controller: 'App\Controller\AppController::try'

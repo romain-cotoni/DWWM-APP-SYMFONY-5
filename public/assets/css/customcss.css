@@ -1,0 +1,236 @@
+
+html, body {
+    min-height : 100%;
+    position   : relative;
+    font-family: 'Ubuntu';
+    font-size  : 16px;
+    margin     : 0;
+    padding    : 0;
+}
+
+.bg-img {
+    background-image : url('../img/swamp.jpg') ;
+    background-size  : cover;
+    background-repeat: no-repeat;
+    /*background-size: 100vw 100vh;*/
+}
+
+/*-----buttons-----*/
+.btn.btn-primary, .bg-primary {
+  color           : #fff;
+  background-color: #FC2067;
+  border-color    : #FC2067;
+}
+.btn-primary:hover {
+    background: linear-gradient(180deg, rgba(252,32,103,1) 0%, rgba(252,165,137,1) 100%, rgba(252,165,137,1) 100%);
+    outline   : none;
+    box-shadow: none;
+}
+.btn.btn-primary:active {
+  background  : #fca589;
+  border-color: #fca589;
+  outline     : none;
+  box-shadow  : none;
+}
+.btn.btn-primary:focus {
+    outline   : none;
+    box-shadow: none;
+}
+/*-----end buttons-----*/
+
+/*-----layout-----*/
+header {
+    background: rgba(139, 139, 127, 0.5);
+    /*background: red;*/
+}
+
+header, .main-content, footer {
+    margin : 0;
+    padding: 0;
+}
+
+footer {
+    background: rgba(139, 139, 127, 0.5);
+    /*background: red;*/
+}
+/*-----end layout-----*/
+
+/*-----icons-----*/
+.footer-icon, .menu-icon {
+    width  : 50px;
+    height : 50px;
+    display: flex;
+}
+.menu-icon {
+    justify-content: end;
+    align-items    : end;
+}
+.footer-icon {
+    justify-content: center;
+    align-items    : center;
+}
+.icon-32px {
+    width :32px;
+    height:32px;
+}
+.icon-32px:hover {
+    width :38px;
+    height:38px;
+}
+.icon-64px {
+    width :40px;
+    height:40px;
+}
+.icon-64px:hover {
+    width :45px;
+    height:45px;
+}
+/*-----end icons-----*/
+
+/*offcanvas*/
+.canvas-email, .canvas-entreprise {
+    margin-right: 45px;
+    width       : 200px;
+    height      : 100px;
+}
+/*end offcanvas*/
+
+/*card*/
+.card {
+    background-color: rgba(211, 202, 202, 0.01);    
+}
+.card-header {
+    width        : 10rem;
+    background   : #f2f4f3;    
+    padding-left : 0;
+    padding-right: 0;
+    opacity      : 0.1;
+}
+.card-img-top {
+    width  : 200px;
+    height : 200px;
+    opacity: 0.5;
+}
+.card .btn {
+    width: 10rem;
+}
+/*end card*/
+
+/*app*/
+.menu-app, .info-app, .display-app {
+    background-color: lightgray;
+}
+.menu-link a {
+    text-decoration: none;
+    color          : white;
+}
+/*end app*/
+
+textarea {
+    resize: none;
+ }
+ 
+.limit {
+    border:0.1px solid rgb(15, 1, 1);
+}
+
+/*-----responsive-----*/
+@media only screen and (max-width: 575px) { /*xs*/
+    header {
+        height: 15vh;
+    }
+    .second-main-content  {
+        height: 70vh;
+    }
+    .canvas-email {
+        margin-top:  15vh;
+    }
+    .canvas-entreprise {
+        margin-top:  15vh;
+    }
+    footer {
+        height: 15vh;
+    }
+}
+@media only screen and (min-width: 576px) { /*sm*/
+    header {
+        height: 20vh;
+    }
+    .header-logo  {
+        margin-top: 12.5vh;
+    }
+    .header-link {
+        margin-top: 26.3vh;
+        height    : 25vh;
+    }
+    .canvas-email {
+        margin-top: 20vh;
+    }
+    .canvas-entreprise {
+        margin-top:  20vh;
+    }
+    .main-content, .second-main-content {
+        height: 115vh;
+    }
+    .contact-content {
+        height: 180vh;
+    }
+    footer {
+        height: 20vh;
+    }
+    .menu-app {
+        height: 20vh;
+    }
+    .info-app {
+       min-height: 10vh;
+    }
+    .display-app {
+        min-height: 90vh;
+    }
+}
+@media only screen and (min-width: 768px) { /*md*/
+    .main-content, .second-main-content {
+        height: 70vh;
+    }
+    .contact-content {
+        height: 180vh;
+    }
+}
+@media only screen and (min-width: 992px) { /*lg*/
+    header {
+        height: 15vh;
+    }
+    .canvas-email {
+        margin-top: 15vh;
+    }
+    .canvas-entreprise {
+        margin-top: 15vh;
+    }
+    .main-content, .contact-content, .second-main-content {
+        height: 70vh;
+    }
+    footer {
+        height : 15vh;
+    }
+    .menu-app {
+        height: 95vh;
+    }
+    .info-app {
+       min-height: 10vh;
+    }
+    .display-app {
+        min-height: 90vh;
+    }
+    .text-size-1 {
+        font-size: 1rem;
+    }
+}
+@media only screen and (min-width: 1200px) { /*xl*/
+    
+}
+@media only screen and (min-width: 1400px) { /*xxl*/
+    .text-size-1 {
+        font-size: 2rem;
+    }
+}
+/*-----end responsive-----*/

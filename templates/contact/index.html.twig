@@ -1,0 +1,94 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ pageName }}{% endblock %}
+
+{% block content %}
+
+<div class="contact-content row mx-0 d-flex justify-content-center align-items-center">
+
+        <div class="col-xs-0 col-sm-0 col-lg-3"></div>
+
+        <div class="col-xs-12 col-sm-12 col-lg-5">
+            <div class="text-center">
+                <h1>Contactez-nous</h1>
+            </div>
+            <div>
+            {{ form_start(form) }}
+                <div class="row mx-0">
+                    <div class="mb-3 form-group col-xs-12 col-sm-12 col-lg-6">
+                        <div>
+                            <div class="d-flex flex-row justify-content-center">{{ form_label(form.firstname) }}</div>
+                            <div class="d-flex flex-row justify-content-center">{{ form_widget(form.firstname) }}</div>
+                        </div>
+                    </div>
+                    <div class="mb-3 form-group col-xs-12 col-sm-12 col-lg-6">
+                        <div>
+                            <div class="d-flex flex-row justify-content-center">{{ form_label(form.lastname) }}</div>
+                            <div class="d-flex flex-row justify-content-center">{{ form_widget(form.lastname) }}</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mx-0">
+                    <div class="mb-3 form-group col-xs-12 col-sm-12 col-lg-6">
+                        <div>
+                            <div class="d-flex flex-row justify-content-center">{{ form_label(form.email) }}</div>
+                            <div class="d-flex flex-row justify-content-center">{{ form_widget(form.email) }}</div>
+                        </div>  
+                    </div>
+                    <div class="mb-3 form-group col-xs-12 col-sm-12 col-lg-6">
+                        <div>
+                            <div class="d-flex flex-row justify-content-center">{{ form_label(form.tel) }}</div>
+                            <div class="d-flex flex-row justify-content-center">{{ form_widget(form.tel) }}</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mx-0">
+                    <div class="mb-3 form-group col-xs-12 col-sm-12 col-lg-12">
+                        <div>
+                            <div class="d-flex flex-row justify-content-center">{{ form_label(form.msg) }}</div>
+                            <div class="d-flex flex-row justify-content-center">{{ form_widget(form.msg) }}</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mx-0 mb-3">
+                    <div class="col-6 d-flex justify-content-end">
+                        {{ form_widget(form.submit) }}
+                    </div>
+                    <div class="col-6 d-flex justify-content-start">
+                        {{ form_widget(form.reset) }}
+                    </div>
+                </div>
+            {{ form_end(form) }} 
+            </div>
+        </div>
+        
+        
+
+        <div class="col-xs-12 col-sm-12 col-lg-4 d-flex flex-column justify-content-center align-items-center">
+            <div class="text-white">
+                
+                    <p class="h5"><img src="{{asset('assets/icon/telephone.png')}}" alt="icon1"/>{{contactCat1Title}}</p>
+                    <div class="ms-5">
+                        <p>{{contactCat1Line1}}</p>
+                        <p>{{contactCat1Line2}}</p>
+                        <p>{{contactCat1Line3}}</p>
+                    </div>
+                
+                    <p class="h5"><img src="{{asset('assets/icon/letter.png')}}" alt="icon1"/>{{contactCat2Title}}</p>
+                    <div class="ms-5">
+                        <p>{{contactCat2Line1}}</p>
+                        <p>{{contactCat2Line2}}</p>
+                        <p>{{contactCat2Line3}}</p>
+                    </div>
+                
+                {#    <p class="h5"><img src="{{asset(contactCat3Icon)}}" alt="icon1"/>{{contactCat3Title}}</p>
+                <div class="ms-5">
+                    <p>{{contactCat3Line1}}</p>
+                    <p>{{contactCat3Line2}}</p>
+                    <p>{{contactCat3Line3}}</p>
+                </div>#}
+            </div>
+        </div>
+</div>
+{% endblock %}
+

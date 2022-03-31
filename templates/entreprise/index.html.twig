@@ -1,0 +1,54 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ pageName }}{% endblock %}
+
+{% block content %}
+    <div class="text-white text-size-1">
+
+        <div class="row mx-0">
+            <div class="col-lg-3 d-flex justify-content-center">
+                <img src="{{asset('assets/img/portrait.png')}}" alt="portrait">
+            </div>
+            <div class="col-lg-9 text-center d-flex flex-column justify-content-center align-items-center">              
+                <h1 class="mt-2 mb-2 text-black"><i class="fas fa-portrait fa-1x me-2"></i>{{entrepriseCat1Title}}</h1>
+                <p>{{ entrepriseCat1Para1 }}</p>
+                <p>{{ entrepriseCat1Para1 }}</p>
+                <p>{{ entrepriseCat1Para1 }}</p>
+            </div>
+        </div>
+
+        <div class="row mx-0 bg-opacity-75">
+            <div class="col-lg-6 text-center d-flex flex-column justify-content-center align-items-center">
+                <h1 class="mt-2 mb-2 text-black"><i class="fas fa-question fa-1x me-2"></i>{{entrepriseCat2Title}}</h1>
+                <p>{{ entrepriseCat2Para1 }}</p>
+                <p>{{ entrepriseCat2Para1 }}</p>
+                <p>{{ entrepriseCat2Para1 }}</p>
+                <p>{{ entrepriseCat2Para1 }}</p>
+            </div>
+            <div class="col-lg-6"></div>
+        </div>
+
+        <div class="row mx-0">
+            <div class="col-lg-6"></div>
+            <div class="col-lg-6 text-center d-flex flex-column justify-content-center align-items-center">
+                <h1 class="mt-2 mb-2 text-black"><i class="far fa-clock fa-1x me-2"></i>{{ entrepriseCat3Title }}</h1>
+                <p>{{ entrepriseCat3Para1 }}</p>
+                <p>{{ entrepriseCat3Para1 }}</p>
+            </div>
+        </div>
+
+        <div class="row mx-0">
+            <div class="col-lg-6 text-center d-flex flex-column justify-content-center align-items-center">
+                <h1 class="mt-2 mb-2 text-black"><i class="fas fa-building fa-1x me-2"></i>{{ entrepriseCat4Title }}</h1>
+                <p>{{ entrepriseCat41Para1 }}</p>
+                <p>{{ entrepriseCat41Para1 }}</p>
+                <p>{{ entrepriseCat41Para1 }}</p>
+                <p>{{ entrepriseCat41Para1 }}</p>
+                <p>{{ entrepriseCat42Para1 }}</p>
+                <p>{{ entrepriseCat42Para1 }}</p>
+            </div> 
+            <div class="col-lg-6"></div>
+        </div>
+    </div>
+{% endblock %}
+

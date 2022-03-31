@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>{% block title %}titre par défaut{% endblock %}</title>
+
+        {% block stylesheets %}
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">            
+            <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet'> 
+            <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
+                   
+            <link href="{{asset('assets/css/customcss.css')}}" rel="stylesheet">
+        {% endblock %}
+    </head>
+    <body {% if pageName == 'app' %} class="no-bg-img" {% endif %}>
+        {% if pageName != 'app' %}
+        <header style="height:35vh;">
+            <div class="row mx-0">
+                <div class="col-3 limit">
+                    <a class="navbar-brand" href="{{path('admin')}}">
+                        <img src="{{asset('assets/img/gnosysLogoCut.png')}}" class="img-fluid" alt="logo" width="200px" height="200px">
+                        <p class="text-white">Ce slogan est si beau</p>
+                    </a>
+                </div>
+
+                <div class="col-6 d-flex flex-row justify-content-center align-items-center limit"></div>
+                
+                <div class="col-3 d-flex flex-row justify-content-end px-0 mx-0 limit">                    
+                    <div class="btn-group dropstart btn-sidemenu">
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"></button>                             
+                       
+                        <ul class="dropdown-menu mb-2">
+                            <li class="nav-item mx-auto">
+                                <a class="nav-link" href="{{path('home')}}">ACCUEIL</a>
+                            </li>
+                            <li class="nav-item mx-auto">
+                                <a class="nav-link" href="{{path('entreprise')}}">L'ENTREPRISE</a>
+                            </li>
+                            <li class="nav-item mx-auto">
+                                <a class="nav-link" href="{{path('contact')}}">NOUS CONTACTER</a>
+                            </li>
+                        </ul>  
+                                            
+                    </div>                
+                </div>
+            </div>
+        </header>
+        {% endif %}
+        
+        {% block content %}
+
+        {% endblock %}
+
+        {% if pageName != 'app' %}
+        <footer> 
+            <div class="footer-div">
+                <div class="row h-75 mx-0">
+                    <div class="footer-titre col-xs-12 col-sm-12 col-md-6 d-flex justify-content-md-end align-items-center text-white">
+                        VOICI MON JOLIE FOOTER
+                    </div>
+                    <div class="footer-icons col-xs-12 col-sm-12 col-md-6 d-flex justify-content-md-start align-items-center">
+                        <div class="div-icon mx-sm-2 d-inline"><a href="#"><img class="footer-icon" src="{{asset('assets/icon/facebook.png')}}"/></a></div>
+                        <div class="div-icon mx-sm-2 d-inline"><a href="#"><img class="footer-icon" src="{{asset('assets/icon/linkedin.png')}}"/></a></div>
+                        <div class="div-icon mx-sm-2 d-inline"><a href="#"><img class="footer-icon" src="{{asset('assets/icon/twitter.png')}}"/></a></div>
+                        <div class="div-icon mx-sm-2 d-inline"><a href="#"><img class="footer-icon" src="{{asset('assets/icon/instagram.png')}}"/></a></div>
+                        <div class="div-icon mx-sm-2 d-inline"><a href="#"><img class="footer-icon" src="{{asset('assets/icon/whatsapp.png')}}"/></a></div>
+                        <div class="div-icon mx-sm-2 d-inline"><a href="#"><img class="footer-icon" src="{{asset('assets/icon/google.png')}}"/></a></div>
+                        <div class="div-icon mx-sm-2 d-inline"><a href="#"><img class="footer-icon" src="{{asset('assets/icon/github.png')}}"/></a></div>                            
+                    </div>         
+                </div>
+                <div class="d-flex flex-row justify-content-end align-items-start h-25 footer-sign">
+                    <p>&copy 2021, Designed & coded by <a href="#">rom1</a>.</p>
+                </div>                
+            </div>
+        </footer>
+        {% endif %}
+        
+        {% block javascripts %}
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+            <script src="https://kit.fontawesome.com/01a63ec227.js" crossorigin="anonymous"></script>            
+            <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+            <script src="{{asset('assets/js/custom-js.js')}}"></script>
+        {% endblock %}
+    </body>
+</html>

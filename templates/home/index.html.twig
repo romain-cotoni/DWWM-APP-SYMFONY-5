@@ -1,0 +1,123 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ pageName }}{% endblock %}
+
+{% block content %}    
+
+<div class="row mx-0">
+    <div class="col-1 main-content"></div>
+    <div class="col-10 main-content d-flex justify-content-center align-items-center">
+        <div class="row mx-0 d-flex justify-content-around align-items-center">
+            <div class="col-md-3 mx-2 my-2">
+                <div class="card border-0 align-items-center"> 
+                    <div id="carouselControls1" class="carousel slide" data-bs-ride="carousel"  data-bs-touch="false" data-bs-interval="false" style="max-width: 200px;">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <a href="{{path('formation')}}"><img src="{{asset('assets/img/formation.jpg')}}" class="card-img-top" alt="formation"></a>
+                            </div>
+                            <div class="carousel-item">
+                                <a href="{{path('audit')}}"><img src="{{asset('assets/img/audit.jpg')}}" class="card-img-top" alt="audit"></a>
+                            </div>
+                            <div class="carousel-item">
+                                <a href="{{path('jury')}}"><img src="{{asset('assets/img/jury.jpg')}}" class="card-img-top" alt="jury"></a>
+                            </div>
+                            <div class="carousel-item">
+                                <a href="{{path('conception')}}"><img src="{{asset('assets/img/conception.jpg')}}" class="card-img-top" alt="conception"></a>
+                            </div>
+                            <div class="carousel-item">
+                                <a href="{{path('stage')}}"><img src="{{asset('assets/img/stage.jpg')}}" class="card-img-top" alt="stage"></a>
+                            </div>
+                        </div>
+                        <button id="carousel-all-prev" class="carousel-control-prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        </button>                   
+                        <button id="carousel1-prev" class="carousel-control-prev" type="button" data-bs-target="#carouselControls1" data-bs-slide="prev" style="width:0px;height:0px;"></button>
+                        <button id="carousel1-next" class="carousel-control-next" type="button" data-bs-target="#carouselControls1" data-bs-slide="next" style="width:0px;height:0px;"></button>                  
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mx-2 my-2">
+                <div class="card border-0 align-items-center"> 
+                    <div id="carouselControls2" class="carousel slide" data-bs-ride="carousel"  data-bs-touch="false" data-bs-interval="false" style="max-width: 200px;">
+                        <div class="carousel-inner">
+                            <div class="carousel-item">
+                                <a href="{{path('formation')}}"><img src="{{asset('assets/img/formation.jpg')}}" class="card-img-top" alt="formation"></a>
+                            </div>
+                            <div class="carousel-item active">
+                                <a href="{{path('audit')}}"><img src="{{asset('assets/img/audit.jpg')}}" class="card-img-top" alt="audit"></a>
+                            </div>
+                            <div class="carousel-item">
+                                <a href="{{path('jury')}}"><img src="{{asset('assets/img/jury.jpg')}}" class="card-img-top" alt="jury"></a>
+                            </div>
+                            <div class="carousel-item">
+                                <a href="{{path('conception')}}"><img src="{{asset('assets/img/conception.jpg')}}" class="card-img-top" alt="conception"></a>
+                            </div>
+                            <div class="carousel-item">
+                                <a href="{{path('stage')}}"><img src="{{asset('assets/img/stage.jpg')}}" class="card-img-top" alt="stage"></a>
+                            </div>
+                        </div>
+                        <button id="carousel2-prev" class="carousel-control-prev" type="button" data-bs-target="#carouselControls2" data-bs-slide="prev" style="width:0px;height:0px;"></button>
+                        <button id="carousel2-next" class="carousel-control-next" type="button" data-bs-target="#carouselControls2" data-bs-slide="next" style="width:0px;height:0px;"></button>                       
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mx-2 my-2">
+                <div class="card border-0 align-items-center"> 
+                    <div id="carouselControls3" class="carousel slide" data-bs-ride="carousel" data-bs-touch="false" data-bs-interval="false" style="max-width: 200px;">
+                        <div class="carousel-inner">
+                            <div class="carousel-item">
+                                <a href="{{path('formation')}}"><img src="{{asset('assets/img/formation.jpg')}}" class="card-img-top" alt="formation"></a>
+                            </div>
+                            <div class="carousel-item">
+                                <a href="{{path('audit')}}"><img src="{{asset('assets/img/audit.jpg')}}" class="card-img-top" alt="audit"></a>
+                            </div>
+                            <div class="carousel-item active">
+                                <a href="{{path('jury')}}"><img src="{{asset('assets/img/jury.jpg')}}" class="card-img-top" alt="jury"></a>
+                            </div>
+                            <div class="carousel-item">
+                                <a href="{{path('conception')}}"><img src="{{asset('assets/img/conception.jpg')}}" class="card-img-top" alt="conception"></a>
+                            </div>
+                            <div class="carousel-item">
+                                <a href="{{path('stage')}}"><img src="{{asset('assets/img/stage.jpg')}}" class="card-img-top" alt="stage"></a>
+                            </div>
+                        </div>
+                        <button id="carousel3-prev" class="carousel-control-prev" type="button" data-bs-target="#carouselControls3" data-bs-slide="prev" style="width:0px;height:0px;"></button>
+                        <button id="carousel3-next" class="carousel-control-next" type="button" data-bs-target="#carouselControls3" data-bs-slide="next" style="width:0px;height:0px;"></button>   
+                        <button id="carousel-all-next" class="carousel-control-next"><div class="carousel-control-next-icon" aria-hidden="true"></div></button>                                        
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>
+    <div class="col-1 main-content d-flex justify-content-end">
+        <div class="d-flex flex-column">
+            <div class="menu-icon">
+                <a class="canvas-icon-email" data-bs-toggle="offcanvas" href="#offcanvasemail" role="button" aria-controls="offcanvas">
+                    <img class="icon-64px" src="{{asset('assets/icon/email.png')}}"/>
+                </a>
+            </div>
+            <div class="canvas-email offcanvas offcanvas-end" tabindex="-1" id="offcanvasemail" aria-labelledby="offcanvasLabel">
+                <div class="offcanvas-body d-flex justify-content-center align-items-center">
+                    <a class="nav-link text-black" href="{{path('contact')}}">Contact</a>
+                </div>
+            </div>
+        
+            <div class="menu-icon">
+                <a class="canvas-icon-entreprise" data-bs-toggle="offcanvas" href="#offcanvasentreprise" role="button" aria-controls="offcanvas">
+                    <img class="icon-64px" src="{{asset('assets/icon/entreprise.png')}}"/>
+                </a>
+            </div>
+            <div class="canvas-entreprise offcanvas offcanvas-end" tabindex="-1" id="offcanvasentreprise" aria-labelledby="offcanvasLabel">
+                <div class="offcanvas-body d-flex justify-content-center align-items-center">
+                    <a class="nav-link text-black" href="{{path('entreprise')}}">Entreprise</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="{{asset('assets/js/home.js')}}"></script>
+{% endblock %}
+
+    
+   

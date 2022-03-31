@@ -1,0 +1,40 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ pageName }}{% endblock %}
+
+{% block content %}
+    <div class="main-content row mx-0 bg-success">
+        <div class="col-1"></div>
+        <div class="col-4 div-overlap main-content bg-warning">
+            <div class="div-overlap-less">
+                <p>texte jury less</p>
+                <p>voir plus...</p>
+            </div>
+            <div class="div-overlap-more">
+                <p>texte jury more</p>
+                <p>voici tout le texte</p>
+                <p>encore du texte</p>
+                <p>toujours du texte</p>
+                <p>du texte en plus</p>
+                <p>encore un peu de texte</p>
+                <p>un autre texte</p>
+            </div>
+        </div>
+        <div class="col-2"></div>
+        <div class="col-4 div-overlap main-content bg-danger">
+            <div class="div-overlap-less">
+                <p>texte audit less</p>
+                <p>voir plus...</p>
+            </div>
+            <div class="div-overlap-more">
+                <p>texte audit more</p>
+                <p>voici tout le texte</p>
+                <p>encore du texte</p>
+                <p>toujours du texte</p>
+                <p>du texte en plus</p>
+                <p>encore un peu de texte</p>
+                <p>un autre texte</p>
+            </div>
+        </div>
+    </div>    
+{% endblock %}

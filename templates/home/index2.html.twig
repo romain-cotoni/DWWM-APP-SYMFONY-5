@@ -1,0 +1,72 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ pageName }}{% endblock %}
+
+{% block content %}
+    <div class="d-flex flex-row justify-content-center align-items-center height-accueil-intro limit vroom">                  
+        {#<p class="font-intro text-white">{{ accueilTextIntro }}</p>#}
+    </div>
+    <div class="container-fluid d-flex align-items-center limit">
+        <div class="row justify-content-around">
+            <div class="col-sm-6 col-md-6 col-lg-4 col-xl-2">
+                <div class="card border-0 align-items-center">
+                    <a href="{{path('formation')}}">                  
+                        <img src="{{asset(accueilCard1Img)}}" class="card-img-top rounded-circle border border-dark" alt="image-formation">
+                        <div class="card-header text-center mt-3">
+                            <h5 class="card-title pt-2">{{ accueilCard1Header }}</h5>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-6 col-lg-4 col-xl-2">
+                <div class="card border-0 align-items-center">
+                    <a href="{{path('audit')}}">
+                        <img src="{{asset(accueilCard2Img)}}" class="card-img-top rounded-circle border border-dark" alt="image-audit">
+                        <div class="card-header text-center mt-3 ">
+                            <h5 class="card-title pt-2">{{ accueilCard2Header }}</h5>
+                        </div>
+                    </a>
+                    {#<div class="card-body text-center">                    
+                        <p class="card-text">{{ accueilCard2Body }}</p>
+                        <a href="{{path('audit')}}" class="btn btn-primary">Voir plus</a>
+                    </div>#}
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-4 col-xl-2">
+                <div class="card border-0 align-items-center">
+                    <a href="{{path('jury')}}">             
+                        <img src="{{asset(accueilCard3Img)}}" class="card-img-top rounded-circle border border-dark" alt="image-jury">
+                        <div class="card-header text-center mt-3">
+                            <h5 class="card-title pt-2">{{ accueilCard3Header }}</h5>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-4 col-xl-2">
+                <div class="card border-0 align-items-center">
+                    <a href="{{path('conception')}}">
+                        <img src="{{asset(accueilCard4Img)}}" class="card-img-top rounded-circle border border-dark" alt="image-conception">                
+                        <div class="card-header text-center mt-3">
+                            <h5 class="card-title pt-2">{{ accueilCard4Header }}</h5>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-4 col-xl-2">
+                <div class="card border-0 align-items-center">
+                    <a href="{{path('stage')}}">
+                        <img src="{{asset(accueilCard5Img)}}" class="card-img-top rounded-circle border border-dark" alt="image-stage">                
+                        <div class="card-header text-center mt-3">
+                            <h5 class="card-title pt-2">{{ accueilCard5Header }}</h5>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>        
+    </div>
+    <div class="height-intro limit vroom">                  
+        <!--empty-->
+    </div>
+{% endblock %}
+
